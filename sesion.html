@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sesion.css">
+  <title>Inicio de Sesión</title>
+  <style>
+    .login-container {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #loginForm {
+      display: none;
+      margin-top: 20px;
+    }
+
+    input, button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+  
+    h2:hover {
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2 onclick="mostrarFormulario()">Iniciar Sesión</h2>
+    
+    <form action="validadusuario.php" method="post" id="loginForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Número de Celular:</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="10 dígitos">
+
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+  <script>
+    function mostrarFormulario() {
+      const form = document.getElementById("loginForm");
+      form.style.display = "block";
+    }
+  </script>
+</body>
+</html>
+

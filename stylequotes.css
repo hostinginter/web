@@ -1,0 +1,22 @@
+.cotizacion-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* separación entre botones */
+  margin-top: 40px;
+}
+
+.boton-grande {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-grande:hover {
+  background-color: #0056b3;
+}

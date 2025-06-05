@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administración de Eventos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Nuestra Plataforma de Administración de Eventos</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="information.html">Sobre Nosotros</a>
+    <a href="cotizacion.php">Cotización</a>
+    
+    <a href="recibo.php">Recibo</a>
+  </nav>
+
+  <script>
+  function validarAdmin() {
+    const clave = prompt("Ingrese la clave de administrador:");
+
+    if (clave === "security") {
+      window.location.href = "quotes.html";
+    } else {
+      alert("Clave incorrecta. No tienes permisos para acceder.");
+    }
+  }
+</script>
+
+
+  <section class="galeria">
+    <img src="https://cantinasalonflorida.com/wp-content/uploads/2019/09/190903_diez-bebidas-tradicionales-de-mexico-que-debes-conocer-1-tequila__Cantina-Salon-Florida-1024x834.jpg" alt="Evento anterior 1">
+    <img src="https://th.bing.com/th/id/R.8550ed22d95f946d8e43f22e1503fbe0?rik=fDFrNe7XxRhP8Q&pid=ImgRaw&r=0" alt="Evento anterior 2">
+    <img src="https://th.bing.com/th/id/OIP.RdU-RDBBZbSw0-eENMtHewHaFY?rs=1&pid=ImgDetMain" alt="Evento anterior 3">
+  </section>
+  <section class="galeria">
+    <img src="https://media.migelatina.com/uploads/2017/02/09033146/commx_pozole.jpg" alt="Evento anterior 4">
+    <img src="https://th.bing.com/th/id/OIP.a-nQyFf6MVKtKQjusO_gWQHaE8?rs=1&pid=ImgDetMain" alt="Evento anterior 5">
+    <img src="https://th.bing.com/th/id/R.5b96579cb5bc82b921893bf29dc79eaa?rik=hwvhc2U8YIZNJg&pid=ImgRaw&r=0" alt="Evento anterior 6">
+  </section>
+  <section class="galeria">
+    <img src="https://www.somosmamas.com.ar/wp-content/uploads/2020/03/Postres-mexicanos-1.jpg" alt="Evento anterior 7">
+    <img src="https://th.bing.com/th/id/OIP.9ZquXgGWB3aRoXiOBJRu6gHaE7?w=262&h=180&c=7&r=0&o=5&pid=1.7" alt="Evento anterior 8">
+    <img src="https://th.bing.com/th/id/OIP.BjoXY_MZcp19YpoJxTpiSgHaEK?w=290&h=180&c=7&r=0&o=5&pid=1.7" alt="Evento anterior 9">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Administración de Eventos. Todos los derechos reservados.</p>
+    <p>Contacto: info@eventosmexico.com | Tel: +52 999 123 4567</p>
+  </footer>
+</body>
+</html>

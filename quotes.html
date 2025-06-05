@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotización</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cotización de Evento</h1>
+  </header>
+
+  <nav>
+   
+    <a href="#" onclick="validarAdmin()">Modificar</a>
+    
+  </nav>
+
+  <section class="cotizacion-form" style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 40px;">
+  <button onclick="window.location.href='conexion.php'" style="padding: 30px 40px; font-size: 1.5rem; background-color: #0b7c31; color: white; border: none; border-radius: 10px; cursor: pointer;">
+    Administrar Catálogo
+  </button>
+  
+  <button onclick="window.location.href='usuarios.php'" style="padding: 30px 40px; font-size: 1.5rem; background-color: #0b7c31; color: white; border: none; border-radius: 10px; cursor: pointer;">
+    Administrar Usuarios
+  </button>
+  
+  <button onclick="window.location.href='eventos.php'" style="padding: 30px 40px; font-size: 1.5rem; background-color: #0b7c31; color: white; border: none; border-radius: 10px; cursor: pointer;">
+    Administrar Pedidos
+  </button>
+
+  <button onclick="window.location.href='sesion.html'" style="padding: 30px 40px; font-size: 1.5rem; background-color: #0b7c31; color: white; border: none; border-radius: 10px; cursor: pointer;">
+    Go Back
+  </button>
+</section>
+
+
+
+  <footer>
+    <p>&copy; 2025 Administración de Eventos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const invitadosInput = document.getElementById('invitados');
+    const mesasSpan = document.getElementById('mesasNecesarias');
+
+    invitadosInput.addEventListener('input', () => {
+      const invitados = parseInt(invitadosInput.value) || 0;
+      const mesas = Math.ceil(invitados / 10);
+      mesasSpan.textContent = mesas;
+    });
+  </script>
+</body>
+</html>
+
